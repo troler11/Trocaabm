@@ -5,6 +5,7 @@ import time
 import ast
 import threading
 import datetime
+import os
 from http.client import IncompleteRead
 
 app = Flask(__name__)
@@ -199,9 +200,11 @@ def index():
 # INICIALIZAÇÃO
 # ==========================================
 if __name__ == "__main__":
-    # Inicia a thread do robô antes de subir o servidor
+    # Inicia a thread do robô
     t = threading.Thread(target=tarefa_monitoramento)
-    t.daemon = True # Isso garante que a thread morra se o servidor cair
+    t.daemon = True 
     t.start()
     
-    app.run(host="0.0.0.0", port=80)
+    # PEGA A PORTA DO RENDER OU USA 5000 SE FOR LOCAL
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
