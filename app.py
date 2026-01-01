@@ -21,7 +21,7 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-SHEET_XLSX_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ZbME4_rlLzq-pAuslL6_kja3FWMPpBdFl2_C82Y01twcn9QX_IWwUlaNNVNRW20E5aANFU6UDw3_/pub?output=xlsx"
+SHEET_XLSX_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSH9lJhzNgDz3x05wnE3lc24YKiUQcn_WTNgxEpsSO2jA36rAwSDfLZUkm1SgE_uoKBXvgx1_8sDTXZ/pub?output=xlsx"
 LINHAS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-jeDXdqfWvVcRQL-aPgyeLstQxwRU0gQnVfzEDfU476vmHcPTaFKqJkdf6NjFEeyRW_TGotfGbodG/pub?gid=0&single=true&output=csv"
 CARROS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlOLnEeXNsgsK2uK0-hHwVhiaE6lsYUMdUE4cxJ5cVSq1YnuEtbJekwd1MS-lP1Gvybn8CYSuyuXIm/pub?gid=0&single=true&output=csv"
 
