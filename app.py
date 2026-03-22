@@ -55,7 +55,7 @@ def obter_veiculo_escala(codLinha, df_sheet, df_linhas):
             if not linha_linhas.empty:
                 valor_coluna_B = str(linha_linhas.iloc[0, 1]).strip()
                 if valor_coluna_B == codLinha:
-                    valor_coluna_G = linha_sheet.iloc[6] if not pd.isna(linha_sheet.iloc[6]) else linha_sheet.iloc[5]
+                    valor_coluna_G = linha_sheet.iloc[7] if not pd.isna(linha_sheet.iloc[7]) else linha_sheet.iloc[6]
                     if isinstance(valor_coluna_G, float) and valor_coluna_G.is_integer():
                         valor_coluna_G = int(valor_coluna_G)
                     return str(valor_coluna_G).strip()
